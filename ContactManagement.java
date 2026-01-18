@@ -21,7 +21,7 @@ public class ContactManagement {
         System.out.print("Enter Phone: ");
         String phone = sc.next();
         contactList.add(new Contact(name, phone));
-        System.out.println("Contact added successfully!👍️\n");}
+        System.out.println("Contact added successfully! \n");}
     public static void updatecontact() {
     	System.out.print("Enter name to update: ");
         String nameToUpdate = sc.next();
@@ -30,13 +30,13 @@ public class ContactManagement {
             if (c.name.equalsIgnoreCase(nameToUpdate)) {
                 System.out.print("Enter new phone: ");
                 c.phone = sc.next();
-                System.out.println("Contact updated successfully!👍️\n");
+                System.out.println("Contact updated successfully! \n");
                 found = true;
                 break;
             }
         }
         if (!found) {
-            System.out.println("Contact not found.👎️\n");
+            System.out.println("Contact not found. \n");
         }
     }
     public static void searchcontact() {
@@ -45,10 +45,10 @@ public class ContactManagement {
     	boolean found=false;
     	for (Contact c : contactList){
     		if (c.name.equalsIgnoreCase(searchname)){
-    			System.out.println("Contact found!👍️\n"+c);
+    			System.out.println("Contact found!\n"+c);
     			found=true;}}
     	if (!found) {
-    		System.out.println("Contact not found.👎️\n");
+    		System.out.println("Contact not found.\n");
     		}
     		}
     public static void deletecontact(){
@@ -64,7 +64,7 @@ public class ContactManagement {
     public static void main(String args[]){
     int choice;
     	do {
-    	System.out.println("*****CONTACT MANAGEMENT*****");
+    	System.out.println("**CONTACT MANAGEMENT**");
     	System.out.println("1.Create new contact");
     	System.out.println("2.Update existing contact");
     	System.out.println("3.Delete contact");
